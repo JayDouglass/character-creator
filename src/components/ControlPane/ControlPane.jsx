@@ -13,7 +13,7 @@ const ControlPane = ({
   handleSelectOption,
 }) => {
   return (
-    <div className={styles.controlPane}>
+    <div className={`${styles.controlPane} max-w-full`}>
       <h2 className={styles.title}>
         {title}
 
