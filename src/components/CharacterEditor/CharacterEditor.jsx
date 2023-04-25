@@ -30,7 +30,7 @@ function App() {
 
   return (
     <main className={styles.characterEditor}>
-      <MaxWidthWrapper className={styles.maxWidthWrapper}>
+      <MaxWidthWrapper className={`${styles.maxWidthWrapper} max-w-[65%]`}>
         <header className={styles.header}>
           <h1 className={styles.title}>Create your Character</h1>
           <p className={styles.description}>
@@ -38,7 +38,7 @@ function App() {
             controls below. What sort of adventure will you embark on?{' '}
           </p>
         </header>
-        <div className={styles.controlColumn}>
+        <div className={`${styles.controlColumn} max-w-[50%]`}>
           <ControlPane
             title="Bodies"
             options={bodyOptions}
@@ -78,8 +78,9 @@ function App() {
         </div>
       </MaxWidthWrapper>
 
-      <div className={styles.characterWrapper}>
+      <div className={`${styles.characterWrapper} fixed top-[128px] bottom-0 right-0`}>
         <Character
+          className="min-h-[500px]"
           body={body}
           head={head}
           face={face}

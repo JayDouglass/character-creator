@@ -8,6 +8,8 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "npm run lint -- --fix",
+    "prettier:check": "npx prettier --check src",
+    "prettier:fix": "npx prettier --write src",
     "preview": "vite preview"
   },
   "dependencies": {

@@ -9,13 +9,14 @@ function Character({
   accessory,
   skinColor,
   clothesColor,
+  className
 }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 1935 3033"
-      className={styles.character}
+      className={`${styles.character} ${className}`}
     >
       <g>
         {/* Bodies */}
