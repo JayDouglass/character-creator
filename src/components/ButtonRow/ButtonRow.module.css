@@ -1,2 +1,3 @@
 .buttonRow {
+  @apply overflow-auto whitespace-nowrap -mx-[22px] -mb-[22px] p-[22px];
 }
